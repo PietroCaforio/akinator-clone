@@ -1,10 +1,10 @@
-# blacklist everyhting
+# Ignore everything
 *
 
-# don't blacklist directories
+# Allow all directories
 !*/
 
-# and don't blacklist these files
+# Allow core source and config files
 !.gitignore
 !*.md
 !*.py
@@ -17,5 +17,24 @@
 !Makefile
 !*.tcia
 !*.json
-!*.gif
 !data/person_2025_small.csv
+
+# Frontend-specific files to keep
+!*.js
+!*.ts
+!*.tsx
+!package.json
+!package-lock.json
+!next.config.js
+!public/
+!pages/
+!app/
+!styles/
+!.env.local
+
+# Frontend folders/files to ignore (Next.js / Node.js)
+node_modules/
+.next/
+out/
+.env
+.DS_Store
